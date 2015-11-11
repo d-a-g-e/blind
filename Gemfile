@@ -62,6 +62,7 @@ group :development do
   gem 'spring'
   # bootstrap
   # gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5.1'
-  gem 'bootstrap-sass', '~> 3.3.4'
+  gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git', :branch => 'next'
+  # gem 'bootstrap-sass', '~> 3.3.4'
 end
 
