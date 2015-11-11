@@ -7,8 +7,8 @@ gem 'rails', '4.2.4'
 #gem 'sqlite3'
 # use postgres
 gem 'pg', '~> 0.18.3'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'bootstrap-sass', '~> 3.3.5'
+gem 'sass-rails', '>= 3.2'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -61,8 +61,5 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   # bootstrap
-  # gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5.1'
-  gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git', :branch => 'next'
-  # gem 'bootstrap-sass', '~> 3.3.4'
 end
 
