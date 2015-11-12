@@ -17,12 +17,11 @@
 @import "bootstrap";
 
 body {
-  background-image: url(blind_gorra.jpg);
-  background-repeat:no-repeat;
-  background-size:contain;
-  background-position:center;
+  background-image: image-url('blind_gorra.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  /*background-image:url("mybackground.jpg");*/
+  /*background-image:image-url("mybackground.jpg");*/
   /*background-size:contain;*/
   /*background-repeat:no-repeat;*/
 }
@@ -199,36 +198,13 @@ body {
   }
 }
 
-#b1 { 
-  /*background: hsl(0, 50%, 50%); */
-    background-image: url(ciano_medio.png);
-    background-repeat:no-repeat;
-    background-size:contain;
-    background-position:center;
-    background-size: cover;
+.bg-body {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-#b2 { 
-  /*background: hsl(0, 50%, 50%); */
-    background-image: url(laca.jpg);
-    background-repeat:no-repeat;
-    background-size:contain;
-    background-position:center;
-    background-size: cover;
-}
-#b3 { 
-  /*background: hsl(0, 50%, 50%); */
-    background-image: url(niora_muro.jpg);
-    background-repeat:no-repeat;
-    background-size:contain;
-    background-position:center;
-    background-size: cover;
-}
-#b4 { 
-  /*background: hsl(0, 50%, 50%); */
-    background-image: url(blind_gorra.jpg);
-    background-repeat:no-repeat;
-    background-size:contain;
-    background-position:center;
-    background-size: cover;
-}
+#b1 { @extend .bg-body;background-image: image-url('ciano_medio.png');}
+#b2 { @extend .bg-body;background-image: image-url('laca.jpg');}
+#b3 { @extend .bg-body;background-image: image-url('niora_muro.jpg');}
+#b4 { @extend .bg-body;background-image: image-url('blind_gorra.jpg');}
 

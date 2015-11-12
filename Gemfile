@@ -62,4 +62,3 @@ group :development do
   gem 'spring'
   # bootstrap
 end
-

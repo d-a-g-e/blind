@@ -11,8 +11,7 @@ root.Blind = ( ->
     true
 
   init_hover = ->
-    run(2000,10)
-    # console.log "cuando se haga hover sobre las letras mostrar las imagenes "
+    run(1200,10)
 
   run = (interval, frames)->
     int = 1
