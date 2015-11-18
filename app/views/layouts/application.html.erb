@@ -8,7 +8,66 @@
 </head>
 <body>
 
+<div class="site-wrapper">
+
+  <div class="site-wrapper-inner">
+
+    <div class="cover-container">
+
+      <div class="masthead clearfix">
+        <div class="inner">
+          <h3 class="masthead-brand">mcmxc</h3>
+          <nav>
+            <ul class="nav masthead-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Portafolio</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="inner cover">
+        <h1 class="blind-brand">blind</h1>
+        <br>
+        <div class="col-sm-4 col-sm-offset-4">
+          <a href="<%= paintings_path %>" class="badge-link-1 link-menu">
+            <%= image_tag 'circle_white.png', class: "img-circle " %>
+          </a>
+          <a href="<%= illustrations_path %>" class="badge-link-2 link-menu">
+            <%= image_tag 'circle_white.png', class: "img-circle " %>
+          </a>
+<br>
+<br>
+<br>
+        </div>
+
+<!--         <img src="blind_gorra.jpg" alt="street" class="img-circle">
+ --><!--         <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+        <p class="lead">
+          <a href="#" class="btn btn-lg btn-default">Learn more</a>
+        </p> -->
+      </div>
+
+<!--       <div class="mastfoot">
+        <div class="inner">
+          <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+        </div>
+      </div> -->
+
+    </div>
+
+  </div>
+
+</div>
 <%= yield %>
+
 
 </body>
 </html>
+<script>
+  $(function() {
+    Blind.init_menu('index');
+  });
+</script>
+  

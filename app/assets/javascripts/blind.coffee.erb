@@ -1,0 +1,41 @@
+# Place all the behaviors and hooks related to the matching controller here.
+# All this logic will automatically be available in application.js.
+# You can use CoffeeScript in this file: http://coffeescript.org/
+root = exports ? this
+root.Blind = ( ->
+
+  init = (page) ->
+    if page == 'index'
+      console.log "blind desde el index"
+      # init_hover()  
+    true
+  init_menu= ->
+      init_hover_menu()
+
+  init_hover_menu = ->
+    $('.badge-link-1 ').hover (->
+      $img = $(this).find('img')
+      $img.attr 'src', "<%= asset_path('badge3_90.png') %>"
+      $('.blind-brand').html('Paintings')
+    ), ->
+      $img = $(this).find('img')
+      $('.blind-brand').html('blind')
+      $img.attr 'src', "<%= asset_path('circle_white.png') %>"
+
+    $('.badge-link-2 ').hover (->
+      $img = $(this).find('img')
+      $('.blind-brand').html('Illustrations')
+      $img.attr 'src', "<%= asset_path('badge2_90.png') %>"
+    ), ->
+      $img = $(this).find('img')
+      $('.blind-brand').html('blind')
+      $img.attr 'src', "<%= asset_path('circle_white.png') %>"
+
+  init_click_menu = ->
+    $('.link-menu').on('click', ->
+      $img = $(this).find('img')
+      # $img.attr 'src', "<%= asset_path('circle_white.png') %>"
+    )
+
+  {init: init,init_menu: init_menu}
+)()
